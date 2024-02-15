@@ -1,0 +1,37 @@
+{
+    "lang": "en-us",
+    "name": "Besøksinfo",
+    "short_name": "Besøksinfo",
+    "description": "Enklere veien til å møte hos",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192"
+        },{
+            "src": "/icon-512x512.png",
+            "sizes":"512x512"
+        }
+    
+    ],
+    "screenshots": [
+        {
+         "src": "image1.jpg",
+          "sizes": "640x959",
+          "type": "image/jpg",
+          "form_factor": "narrow",
+          "label": "Wonder Widgets"
+        },
+        {
+            "src": "image2.jpg",
+             "sizes": "1000x1174",
+             "type": "image/jpg",
+             "form_factor": "wide",
+             "label": "Wonder Widgets"
+           }
+    ]
+}

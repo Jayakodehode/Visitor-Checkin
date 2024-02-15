@@ -1,0 +1,94 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Group 5.png"/>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- styles for mapbox-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  
+    <title>Sjekk inn</title>
+</head>
+<body>
+    <div class="container">
+        
+<header class="appdetails" >
+   <img src="Group 5.png" alt="Logo"> 
+   <h2 class="logoname">Besøksinfo</h2>
+</header>
+<h5>Velkommen til å besøke hos. Vi gjør ditt besøket litt mer enklere.</h5>
+<div class="travelinfo" id="travel-info">
+    
+<div class="inputcontainer">
+   
+    <form action="" id="velg-reise">
+    <label for="reise-optioner">Velg et option :</label>
+    <select name="reise-optioner" id="reise-optioner">
+        <option value="none">None</option>
+        <option value="buss">BUSS</option>
+        <option value="bil">BIL</option>
+        <option value="taxi">Taxi</option>
+    </select>
+ </form>
+</div>
+<div class="outputcontainer">
+<div class="reisemedbuss reiseElement" id="reise-med-buss">
+
+  <div id="bussmap" class="">
+    <div class="bussinfo"><p>Busser går til Tvedtsenter : <span>3</span><span>X60</span><span>101</span><span>X74</span><span>X76</span>
+        <span>X73</span><span>X30</span> </p>
+        <p>Bussstopp Navn : <span>Tvedtsenteret</span></p> 
+    </div>
+<img src="BussmapImage.png" alt="Bussmapimage">
+  </div>
+</div>
+<div class="reisemedbil reiseElement" id ="reise-med-bil">
+   <div id="bilmap">
+    
+   </div>
+    
+  
+</div>
+<div class="reisemedtaxi reiseElement" id="reise-med-taxi">
+  
+ 
+    <div id="taximap" class="map"></div>
+</div>
+</div>
+
+</div>
+<div class="parkinginfo" id="parking-info"> <img src="Ambio-Parkinginfo2.png" alt="ParkingplaceImage"></div>
+
+<footer>
+<div class="footerdetails">
+    <h6>Ambio AS</h6>
+    <p>Fabrikkveien 10 4033, Stavanger<p>
+</div>
+
+</footer>
+
+
+ 
+</div>
+
+<!-- script for mapbox-->
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+
+    <!-- ***script for google maps ***
+    <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDvUH-MvlzNEyJwrUaE1gHaAEvsR3X__c&callback=initMap"></script>-->
+  
+    <script src="script.js"></script>
+
+<script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' });
+    }
+    </script>
+
+</body>
+</html>
